@@ -91,3 +91,15 @@ function startListening(){
 
 </body>
 </html>
+<button onclick="testDog()">Talk to Dog</button>
+
+<script>
+function testDog() {
+    alert("Button works!");
+
+    const text = "Hello! I am your AI Dog!";
+
+    const speech = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(speech);
+}
+</script>
